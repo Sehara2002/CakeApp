@@ -1,7 +1,7 @@
 import FooterComponent from "./FooterComponent";
 import Navbar from "./Navbar";
 import "./CSS/About.css";
-import img1 from "./Assets/Images/img1.jpeg"
+import img1 from "./Assets/Images/ImageBar.png"
 
 const About = () => {
   return (
@@ -33,7 +33,18 @@ const About = () => {
       <div className="about-image">
         <img src={img1} alt="" />
       </div>
-      
+      <h1 className="main-topic-about">Food Safety Policy</h1>
+      <div className="p1">
+          <p>
+          We at Fab Foods (Pvt) Ltd, strive to be recognized as a manufacturing best quality cakes, gateaux, pastries, bakery products, ready to eat meals, beverages & providing outdoor catering services.
+          </p>
+        </div>
+        <h1 className="main-topic-about">Achievements</h1>
+      <div className="p1">
+          <p>
+          Our awards and centerpiece achievements are accolades for all the love and hard work we put into bringing you the best. We have won many, both local and international awards; gold, silver and bronze awards for Petite Four, Structures and our French style pastries. Our A+ award from the Public Health Department is always an honor in place of our efforts in practicing the most hygienic conditions.
+          </p>
+        </div>
       <FooterComponent activePage="about" />
     </div>
   );
