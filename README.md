@@ -7,7 +7,7 @@ Home page and the about page is almost done. <br/>
 Contact page, Login, Sign up pages should be created. <br/>
 After creating each page please update it in Github Repository. <br/>
 Please add a message to identify what are the changes. <br/>
-Please send a feedback by editing this readme file mentioning your name. <br/>
+Update this readme file after you read this. <br/>
 </h3>
 
 
