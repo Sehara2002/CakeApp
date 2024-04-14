@@ -100,7 +100,7 @@
     top:180px;
     left:1100px;
     justify-self: center;
-    border-radius: 50px;
+    border-radius: 50px 0px 50px 0px;
     animation-delay: 3s;
     animation: image-loader;
     animation-duration: 3s;
@@ -114,7 +114,7 @@
     width:600px;
     position:absolute;
     top:600px;  
-    font-size:20px;  
+    font-size:25px;  
     left:230px;
     animation:text-loader;
     animation-duration: 6s;
