@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+*{
+    color:#785F37;
+}
+.MainContainer{
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 80px;
+    height:85vh;
+    width:98%;
+    overflow: hidden;
+    background-color: #E9DBBD;
+    position: inherit;
+    border-radius: 50px;
+}
+
+.text1{
+    font-size:150px;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 800;
+    position:absolute;
+    left:250px;
+    top:150px;
+    animation: animate-text1;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: initial;
+    color:#785F37;
+}
+.text2{
+    font-size:120px;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 200;
+    position:absolute;
+    top:350px;
+    left:450px;
+    animation: animate-text2;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count:initial;
+    color:#785F37;
+}
+
+@keyframes animate-text1 {
+    0%{
+        top:100px;
+        opacity: 0;
+        left:200px;
+    }
+    50%{
+        top:350px;
+        opacity: 1;
+        left:200px;
+    }
+    75%{
+        top:230px;
+        opacity:1;
+        left:250px;
+    }
+    100%{
+        top:150px;
+    }
+}
+@keyframes animate-text2 {
+    0%{
+        top:530px;
+        opacity:0;
+        left:550px;
+    }
+    50%{
+        top:380px;
+        opacity:1;
+        left:550px;
+    }
+    75%{
+        top:430px;
+        opacity:1;
+        left:450px;
+    }
+    100%{
+        top:350px;
+    }
+}
+
+@keyframes image-loader {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.col-sm-6{
+    flex-basis:50%;
+}
+.banner-img{
+    height:600px;
+    width:700px;
+    position: absolute;
+    top:180px;
+    left:1100px;
+    justify-self: center;
+    border-radius: 50px;
+    animation-delay: 3s;
+    animation: image-loader;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    display:none;
+}
+.display{
+    display: block;
+}
+.text-container{
+    width:600px;
+    position:absolute;
+    top:600px;  
+    font-size:20px;  
+    left:230px;
+    animation:text-loader;
+    animation-duration: 6s;
+    animation-delay: 0s;
+}
+.para1{
+    text-align: center;
+    top:500px; 
+    color:#785F37;
+    font-weight: 400;
+
+}
+@keyframes text-loader {
+    0%{
+        opacity:0;
+        top:550;
+    }
+    100%{
+        opacity:1;
+        top:600px;        
+    }
+}
+
+@keyframes btn-loader {
+    0%{
+        top:900;
+        opacity:0;
+    }
+    100%{
+        top:700;
+        opacity:1;
+    }
+}
+.btn-container{
+    position:absolute;
+    top:700px;
+    left:400px;
+
+}
+.btn-order{
+    height:50px;
+    width:200px;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 50px;
+    background-color: #785F37;
+    color:white;
+    cursor: pointer;
+    border:2px solid #785F37;
+    transition: 0.25s;
+    animation: btn-loader;
+    animation-duration: 3s;
+}
+.btn-order:hover{
+    background-color: white;
+    color:#785F37;
+}

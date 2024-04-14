@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    color:black;
+}
+
+.Special-Events{
+    width:98%;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top:80px;
+    height:70vh;
+    overflow: hidden;
+}
+.main-topic{
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top:50px;
+}
+.card{
+    width:400px;
+    height:500px;
+    text-align: center;
+    margin-left:85px;
+    margin-right:85px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container-slides{
+    display:none;
+    animation:slide-loader;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    
+}
+.display-slide{
+    display:block;
+}
+.next,.prev{
+    cursor:pointer;
+}
+@keyframes slide-loader {
+    0%{
+        transform:translateX(1700px);
+        opacity:0px;
+
+    }
+    25%{
+        transform: translateX(0px);
+        opacity:1px;
+    }
+    75%{
+        transform: translateX(0px);
+        opacity:1px;
+    }
+    100%{
+        transform:translateX(-1900px);
+        opacity:0px;
+    }
+}
+.arrow{
+    margin-top:250px;
+}
+.container-dots{
+    width:200px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 10px;
+    height:50px;
+}
+.dot{
+    height:20px;
+    width:20px;
+    background-color: #CBB682;
+    border-radius: 50%;
+    cursor:pointer;
+    margin: 10px;
+}
+.active-dot{
+    background-color: #785F37;
+}
+.img img{
+    width:400px;
+    height:400px;
+}
+.story{
+    margin-top:30px;
+    width:1400px;
+    height:80vh;
+    margin-left: auto;
+    margin-right:auto;
+    background-color: rgba(188,157,82,0.4);
+    position: relative;
+    padding:20px;
+    text-align: center;
+    border-radius: 20px;
+}
+.story h1{
+    font-size:60px;
+    font-family: "Poppins", sans-serif;
+    font-weight:400;
+}
+.story p{
+    width:900px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:25px;
+    line-height: 50px;
+    font-family: "Poppins", sans-serif;
+}
