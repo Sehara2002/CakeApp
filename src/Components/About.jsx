@@ -1,6 +1,7 @@
 import FooterComponent from "./FooterComponent";
 import Navbar from "./Navbar";
 import "./CSS/About.css";
+import img1 from "./Assets/Images/img1.jpeg"
 
 const About = () => {
   return (
@@ -8,7 +9,6 @@ const About = () => {
       <Navbar activePage="about" />
       <div className="about-container">
         <h1 className="main-topic-about">About</h1>
-
         <div className="p1">
           <p>
             Since 1979 with years of experience and commitment to our customers,
@@ -30,7 +30,10 @@ const About = () => {
           </p>
         </div>
       </div>
-
+      <div className="about-image">
+        <img src={img1} alt="" />
+      </div>
+      
       <FooterComponent activePage="about" />
     </div>
   );

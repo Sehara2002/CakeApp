@@ -22,3 +22,14 @@
     font-size:23px;
     text-align: center;
 }
+.about-image{
+    height:600px;
+    width:98%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.about-image img{
+    height:590px;
+    width:100%;
+}
