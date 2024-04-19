@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Water+Brush&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap');
+
+.background{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../Assets/Images/img4.jpg");
+    height:120vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color:black;
+}
+
+.topic{
+    text-align: center;
+    margin-top:10px 10px auto auto;
+}
+
+.top1{
+    color: white;
+    font-family: "Kaushan Script", cursive;
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.top2{
+    color: white;
+    font-family: "Water Brush", cursive;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.form-container{    
+    height:94vh;
+    margin: auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.404);
+    border-radius: 10px;
+    width:800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row{
+    display: flex;
+}
+
+.col{
+    flex-basis: 50%;
+}
+
+.label,.btn{
+    color: white;
+    font-size: 23px;
+}
+
+.label{
+    margin-left: -170px;
+}
+
+.input,.inp{
+    background-color: rgba(128, 128, 128, 0.555);
+    padding: 15px 90px 15px 10px;
+    border-radius: 10px;
+    margin: 10px;
+    border: 0;
+    color: white;
+    font-size: 20px;
+}
+
+.input{
+    width: 270px;
+}
+
+.input::placeholder,.inp::placeholder,.o-btn{
+    color: white;
+    font-family: "Yrsa", serif;
+    font-size: 20px;
+}
+
+.btn{
+    background-color: transparent;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 20px; 
+}
+
+.btn:hover{
+    background-color: #c19e6a;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.inp{
+    width: 610px;
+}
+
+.o-btn{
+    border-radius: 10px;
+    border: 0;
+    background-color: #c19e6a;
+    padding: 15px 90px 15px 10px;
+    font-size: 25PX;
+    text-align: center;
+    width: 610px;
+    padding: 10px 210px;
+    margin-top: 7px;
+}
+.cross{
+    color:white;
+    position: absolute;
+    top:19px;
+    left:1860px;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.205);
+    border-radius: 500px;
+    cursor: pointer;
+}
+
+.cross:hover{
+    padding: 12px 22px;
+    background-color: rgba(255, 255, 255, 0.637);
+}
