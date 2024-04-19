@@ -5,6 +5,7 @@ import Cakes from './Components/Cakes.jsx'
 import Orders from './Components/Orders.jsx'
 import Contact from './Components/Contact.jsx'
 import About from './Components/About.jsx'
+import Signup from './Components/Signup.jsx'
 import './index.css'
 import {createBrowserRouter,RouterProvider} from 'react-router-dom';
 
@@ -29,6 +30,9 @@ const router = createBrowserRouter([
   {
     path:"/about",
     element:<About/>,
+  },{
+    path:"/signup",
+    element:<Signup/>
   }
 ])
 
