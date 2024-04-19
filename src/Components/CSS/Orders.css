@@ -67,6 +67,11 @@
     color: white;
     font-size: 20px;
 }
+
+.input{
+    width: 270px;
+}
+
 .input::placeholder,.inp::placeholder,.o-btn{
     color: white;
     font-family: "Yrsa", serif;
