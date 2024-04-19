@@ -7,7 +7,7 @@ const SpecialEvents = () => {
   useEffect(()=>{
     setTimeout(() => {
         if(slide>=3){
-          
+          setSlide(0);
         }else{
             setSlide(slide+1);
         }
