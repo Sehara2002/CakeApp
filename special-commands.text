@@ -1,0 +1,19 @@
+1) Generate a div with class name
+    .class-name
+
+2) Generate a dive with id name
+    #id-name
+
+3) Generate a div with multiple class name
+    .class-name1.class-name2.class-name3
+
+4) Generating a div inside another div.
+    .outer-class>.inner-class
+
+5) Generating two seperate classes inside a div.
+    .outer-class>.inner-class1 + .inner-class2
+
+6) Genenating multiple classes inside a div.
+    .outer-class>.inner-class*number
+
+
