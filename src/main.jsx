@@ -6,6 +6,7 @@ import Orders from './Components/Orders.jsx'
 import Contact from './Components/Contact.jsx'
 import About from './Components/About.jsx'
 import Login from './Components/Login.jsx'
+import Signup from './Components/Signup.jsx'
 import './index.css'
 import {createBrowserRouter,RouterProvider} from 'react-router-dom';
 
@@ -35,6 +36,9 @@ const router = createBrowserRouter([
     path:"/login",
     element:<Login/>,
 
+  },{
+    path:"/signup",
+    element:<Signup/>
   }
 ])
 
