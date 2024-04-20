@@ -1,0 +1,120 @@
+
+
+.split {
+    height: 100%;
+    bottom: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    width: 50%;
+    
+  }
+  
+ 
+  .left {
+    width: 50%;
+    left: 50px;
+  }
+
+  .right {
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    
+    
+  }
+  .image{
+    width: 960px;
+    height: 950px;
+    object-fit: fill;
+    position: fixed;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+  }
+  
+  .right:hover .image {
+    opacity: 0.4;
+  }
+  
+  .right:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    
+    color: black;
+    font-size: 120px;
+    font-family:Brush Script MT, Brush Script Std, cursive;
+}
+
+.bottom-text{
+    padding-left:95px ;
+    color: rgb(155, 115, 27);
+}
+  
+
+  .login-heading{
+    font-family: inter;
+    
+    padding-top: 70px;
+  }
+  .inner-dev{
+    width: 850px;
+    
+  }
+  .logo{
+    
+    width: 160px;
+    height: 160px;
+  }
+
+  .login{
+    display: inline-block;
+    background: #FFFFFF;
+    width: 604px;
+    height: 470px;
+    margin-top: 2%;
+    border-radius: 22px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.link{
+    color: hsl(209, 70%, 33%);
+    font-family: 'Montserrat light';
+    font-size: 18px;
+    cursor: pointer;
+    display: block;
+    text-decoration:none;
+    font-weight: bold;
+}
+.txt{
+    font-family: 'Montserrat light';
+    font-size: 18px;
+    display: block;
+    text-decoration: none;
+
+}
+
+h4{
+    font-family: 'Segoe UI', bold;
+    font-size: 35px;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+  
