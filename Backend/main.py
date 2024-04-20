@@ -5,6 +5,17 @@ from database import client
 from bson import ObjectId
 
 app = FastAPI()
+
+app.add_middleware(
+ CORSMiddleware,
+ allow_origins=["http://localhost:5173"], 
+ allow_credentials=True,
+ allow_methods=["*"],
+ allow_headers=["*"],
+ )
+
+
+
 database = client["CakeApp"]
 
 class Customer_data(BaseModel):
@@ -14,7 +25,7 @@ class Customer_data(BaseModel):
     address:str
     contact_num:str
     email:str
-    username:str
+    username:str = None
     password:str
 
 
@@ -48,6 +59,10 @@ async def login(user: Customer_data):
         user_login_data["_id"] = str(user_login_data["_id"])
         return user_login_data
     return {"Message":"Cannot Find the User"} 
+
+if __name__ == "__main__":
+ import uvicorn
+ uvicorn.run(app, host="0.0.0.0", port=8000)
     
     
     
