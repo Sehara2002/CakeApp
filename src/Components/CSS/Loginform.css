@@ -1,18 +1,11 @@
-form{
+.login-frm{
     display: inline-block;
     align-items: center;
     height: 170px;
     width: 500px;
     margin-bottom: 140px;
 }
-.text_area{
-    align-content: center;
-    border-radius: 15px;
-    margin-bottom: 37px;
-    width: 100%;
-    height: 50px;
-    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
-}
+
 
 .text_input{
     margin-top: 1.2rem;
@@ -31,7 +24,7 @@ form{
 }
 
 
-.btn{
+.btn-login{
     margin-top: 28px;
     width: 165px;
     height: 50px;

@@ -3,7 +3,7 @@ import "./CSS/Loginform.css"
 const Loginform = () => {
   return (
     <div>
-        <form>
+        <form className="login-frm">
           <div >
             <input 
               type="text"
@@ -27,7 +27,7 @@ const Loginform = () => {
           <input
             type="submit"
             value="LOGIN"
-            className="btn"
+            className="btn-login"
 
           />
         </form>

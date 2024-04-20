@@ -55,7 +55,7 @@ const Orders = () => {
                 <input type="text" className="inp name" placeholder="Your Name" /><br/>
                 <input type="email" className="inp email" placeholder="Your Email"/><br/>
                 <input type="text" className="inp number" placeholder="Phone Number"/><br/>
-                <textarea className="inp txt" placeholder="Address" rows="6" ></textarea>
+                <textarea className="inp add-txt" placeholder="Address" rows="6" ></textarea>
               </div>
               <div className="order-btn">
                 <button className="o-btn">Order</button>
