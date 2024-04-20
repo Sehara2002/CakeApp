@@ -15,23 +15,19 @@
   flex-basis: auto;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="email"],
-select,
-textarea {
-  height: 50px;
-  border: none;
-  width: 100%;
-  padding: 5px 0px 5px 20px;
-  margin: 20px;
-  box-sizing: border-box;
-  background-color: rgba(209, 178, 128, 25%);
-  border-radius: 5px;
-  font-size: 20px;
+.txt{
+    height:50px;
+    border:none;
+    width:100%;
+    padding: 5px 0px 5px 20px;
+    margin: 20px ;
+    box-sizing: border-box;
+    background-color: rgba(209,178,128,25%);
+    border-radius: 5px;
+    font-size: 20px;
 }
-form {
-  width: 800px;
+.form{
+     width:800px;
 }
 
 .subset {
