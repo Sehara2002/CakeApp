@@ -2,11 +2,9 @@ from fastapi import FastAPI,HTTPException,status
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from database import client
-
+from bson import ObjectId
 
 app = FastAPI()
-
-
 database = client["CakeApp"]
 
 class Customer_data(BaseModel):
@@ -37,7 +35,21 @@ def customer(user:Customer_data):
     inserted_id = collection.insert_one(user_data).inserted_id
     return {"success":f"{inserted_id}"}
 
-
+@app.post("/login")
+async def login(user: Customer_data):
+    collection = database["Customer"]
+    login_data = {
+        "username":user.username,
+        "password":user.password
+    }
+    
+    user_login_data = collection.find_one(login_data)
+    if user_login_data:
+        user_login_data["_id"] = str(user_login_data["_id"])
+        return user_login_data
+    return {"Message":"Cannot Find the User"} 
+    
+    
     
 
 
