@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Water+Brush&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap');
 
 .background{
-    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../Assets/Images/img4.jpg");
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../Assets/Images/img4.jpg");
     height:120vh;
     background-repeat: no-repeat;
     background-position: center;
