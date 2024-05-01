@@ -1,18 +1,17 @@
 import "./CSS/Contact.css"
 import FooterComponent from "./FooterComponent"
 import Navbar from "./Navbar"
-<<<<<<< HEAD
+
 import conImg from "./Assets/Images/conCake.png"
 import mail from "./Assets/Images/EmailIcon.png"
 import call from "./Assets/Images/CallIcon.png"
-=======
+
 import img6 from "./Assets/Images/backgroundcake.png"
->>>>>>> ce3c80049cf8f0b0d304b91ae6c514c0e454ffcc
+
 
 const Contact = () => {
   return (
     <div>
-<<<<<<< HEAD
       <div className="contactContainer">
       <Navbar activePage = "contact"/>
       <div className="con-outer-row">
@@ -48,7 +47,6 @@ const Contact = () => {
 
       <FooterComponent activePage = "contact"/>
       </div>
-=======
         <Navbar activePage = "contact"/>
         <div className="divider">
           <div className="left">
@@ -59,7 +57,6 @@ const Contact = () => {
           </div>
         </div>
         <FooterComponent activePage = "contact"/>
->>>>>>> ce3c80049cf8f0b0d304b91ae6c514c0e454ffcc
     </div>
   )
 }
