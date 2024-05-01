@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Love+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Love+Light&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.con-outer-col1{
+    margin-top: 110px;
+    margin-left: 50px;
+}
+.conCake{
+    width: 780px;
+    height: 1250px;
+}
+
+.conCake:hover{
+    opacity: 0.6;
+}
+
+.contactUs,.contactUs2{
+    position: absolute;
+    background-attachment: black;
+    font-family: "Love Light", cursive;
+    font-size: 80px;
+}
+
+.contactUs{
+    margin: -800px 0 0 230px;
+}
+
+.contactUs2{
+    margin: -700px 0 0 400px;
+}
+
+.con-outer-row{
+    display: flex;
+}
+
+.con-outer-col1,.con-outer-col2{
+    flex-basis: 50%;
+}
+
+.con-inner-row1{
+    display: flex;
+    margin: 350px auto 20px 30px;
+}
+
+.con-inner-col1,.con-inner-col2{
+    flex-basis: 50%;
+}
+
+.email,.call{
+    font-size: 30px;
+    margin: 30px auto auto -20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.con-inner-row2{
+    margin: 20px auto auto 20px;
+}
+
+.detail1,.detail2,.detail3{
+    width: 500px;
+    height: 60px;
+    margin: 20px auto 10px 100px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: black;
+    padding-left: 40px;
+    border-color: #c19e6a;
+    border-width: 5px;
+}
+
+.detail1{
+    margin-top: 220px;
+}
+
+.detail3{
+    height: 200px;
+}
+
+.detail1::placeholder,.detail2::placeholder,.detail3::placeholder{
+    color: gray;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    padding-left: 0px;
+}
+
+/*.send button{
+    width: 200px;
+    height: 60px;
+    margin: 20px auto auto 105px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: black;
+    padding-left: 0px;
+    border-color: #c19e6a;
+    border-width: 5px;
+    color: white;
+    background-color: #c19e6a;
+}*/
+
+.send button{
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 20px auto auto 105px;
+    color: #ffffff;
+    background-color: #c19e6a;
+    padding: 10px 30px;
+    border: none;
+    box-shadow: none;
+    border-radius: 50px;
+    transition : 732ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    
+}
+    
+.send button:hover{
+    transition : 732ms;
+    padding: 10px 40px;
+    transform : translateY(-0px);
+    background-color: #ffffff91;
+    color: #c19e6a;
+    border: solid 2px #c19e6a;
+    border-width: 5px;
+    
+}
