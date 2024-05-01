@@ -70,7 +70,11 @@
     left:500px;
 }
 .logo img{
-    height:100px;
-    width:100px;
-    border-radius: 50%;
+    height:105px;
+    width:155px;
+   
+}
+.navloginicon{
+    width: 42px;
+    height: 42px;
 }

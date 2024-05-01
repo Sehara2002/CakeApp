@@ -1,6 +1,16 @@
 import { useEffect, useState } from "react";
 import "./CSS/SpecialEvents.css";
 import img1 from "./Assets/Images/img2.jpeg";
+import weddingcake from "./Assets/Images/weddingcake.jpeg";
+import minicake from "./Assets/Images/minicake.jpeg";
+import birthdaycake from "./Assets/Images/birthdaycake.jpeg";
+import gradcake from "./Assets/Images/gradcake.jpeg";
+import gencake from "./Assets/Images/gencake.jpeg";
+import cupcake from "./Assets/Images/cupcake.jpeg";
+import cakepop from "./Assets/Images/cakepop.jpeg";
+import anvcake from "./Assets/Images/anvcake.jpeg";
+import specialcake from "./Assets/Images/specialcake.jpeg";
+
 const SpecialEvents = () => {
   const [slide, setSlide] = useState(0);
 
@@ -45,16 +55,16 @@ const SpecialEvents = () => {
           <div className={`container-slides ${slide===1?"display-slide":""}`}>
             <div className="row">
               <div className="card">
-                <div className="img"><img src={img1} alt="" /></div>
-                <div className="title">Title 1</div>
+                <div className="img"><img src={weddingcake} alt="" /></div>
+                <div className="title">Wedding Cakes</div>
               </div>
               <div className="card">
-                <div className="img"><img src={img1} alt="" /></div>
-                <div className="title">Title 1</div>
+                <div className="img"><img src={minicake} alt="" /></div>
+                <div className="title">Mini Cakes</div>
               </div>
               <div className="card">
-                <div className="img"><img src={img1} alt="" /></div>
-                <div className="title">Title 1</div>
+                <div className="img"><img src={birthdaycake} alt="" /></div>
+                <div className="title">Birthday Cakes</div>
               </div>
             </div>
           </div>
@@ -62,16 +72,16 @@ const SpecialEvents = () => {
           <div className={`container-slides ${slide===2?"display-slide":""}`}>
             <div className="row">
               <div className="card">
-                <div className="img"><img src={img1} alt="" /></div>
-                <div className="title">Title 2</div>
+                <div className="img"><img src={gradcake} alt="" /></div>
+                <div className="title">Graduation Cakes</div>
               </div>
               <div className="card">
-                <div className="img"><img src={img1} alt="" /></div>
-                <div className="title">Title 2</div>
+                <div className="img"><img src={gencake} alt="" /></div>
+                <div className="title">Gender Reveal Cakes</div>
               </div>
               <div className="card">
-                <div className="img"><img src={img1} alt="" /></div>
-                <div className="title">Title 2</div>
+                <div className="img"><img src={cupcake} alt="" /></div>
+                <div className="title">Cupcakes</div>
               </div>
             </div>
           </div>
@@ -80,17 +90,17 @@ const SpecialEvents = () => {
             <div className="row">
               <div className="card">
                 <div className="img">
-                    <img src={img1} alt="" />
+                    <img src={cakepop} alt="" />
                 </div>
-                <div className="title">Title 3</div>
+                <div className="title">Cake Pops</div>
               </div>
               <div className="card">
-                <div className="img"><img src={img1} alt="" /></div>
-                <div className="title">Title 3</div>
+                <div className="img"><img src={anvcake} alt="" /></div>
+                <div className="title">Anniversary Cakes</div>
               </div>
               <div className="card">
-                <div className="img"><img src={img1} alt="" /></div>
-                <div className="title">Title 3</div>
+                <div className="img"><img src={specialcake} alt="" /></div>
+                <div className="title">Special Occasion Cakes</div>
               </div>
             </div>
           </div>

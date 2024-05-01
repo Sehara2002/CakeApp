@@ -3,9 +3,14 @@
 .footer-section{
     margin-top:50px;
     height:50vh;
+    padding-left: 70px;
+    padding-right: 70px;
+    
+    
 }
 .col-sm-3{
-    flex-basis:25%;
+    padding-top: 25px;
+    padding-left: 350px;
 }
 .list-item{
     height: 40px;
@@ -31,4 +36,15 @@
 }
 .active-link{
     color:#785F37;
+}
+
+.footer-logo{
+    padding-left: 170px;
+    padding-top: 5px;
+}
+
+.footer-para{
+    padding-left: 175px;
+    font-family: "Poppins", sans-serif;
+
 }
