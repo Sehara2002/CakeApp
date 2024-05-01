@@ -69,3 +69,8 @@
     top:90px;
     left:500px;
 }
+.logo img{
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+}

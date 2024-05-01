@@ -1,13 +1,11 @@
 import { useRef } from "react"
 import "./CSS/Loginform.css"
-import { useEffect } from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom"
 
 const Loginform = () => {
 
   const navigate = useNavigate();
-  let state;
   const pw = useRef(null);
   const un = useRef(null);
 
@@ -19,7 +17,6 @@ const Loginform = () => {
     if(username === "Admin" && password == "abc@123"){
       navigate("/");
     }else{
-      state = false;
       alert("Login Failed");
     }
   }
