@@ -3,7 +3,7 @@
     padding: 25px 0px 25px 0;
 }
 #section{
-    padding: 25px 0 25px 0;
+    padding: 50px 0 25px 0;
     text-align: center;
     font-size: 2rem;
     font-family: verdana;
@@ -50,4 +50,9 @@
     align-items: center;
     text-align: center;
     margin: 5px;
+}
+
+.pri h4{
+    margin-top: 0;
+
 }
