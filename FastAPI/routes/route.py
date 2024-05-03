@@ -2,7 +2,6 @@ from fastapi import APIRouter
 from Models.model import User
 from DB.database import collection
 
-
 router = APIRouter()
 
 @router.post("/signup")
