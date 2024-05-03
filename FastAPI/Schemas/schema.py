@@ -1,6 +1,6 @@
 def individual_serial(user) -> dict:
     return{
-        "id":str(user["id"]),
+        "id":str(user["_id"]),
         "name":user["name"],
         "age":user["age"],
         "gender":user["gender"],
@@ -12,4 +12,4 @@ def individual_serial(user) -> dict:
     }
 
 def list_serial(users) -> list:
-    return(individual_serial(user) for user in users)
+    return[individual_serial(user) for user in users]
