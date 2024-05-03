@@ -1,6 +1,7 @@
 from fastapi import APIRouter
 from Models.model import User
 from DB.database import collection
+from fastapi.middleware.cors import CORSMiddleware
 
 router = APIRouter()
 
