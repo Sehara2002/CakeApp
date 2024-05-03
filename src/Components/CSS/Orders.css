@@ -4,7 +4,7 @@
 
 .background{
     background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../Assets/Images/img4.jpg");
-    height:120vh;
+    height:130vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -30,8 +30,8 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.form-container{    
-    height:94vh;
+.form-con{    
+    height:105vh;
     margin: auto;
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.404);
@@ -120,4 +120,10 @@
 .cross:hover{
     padding: 12px 22px;
     background-color: rgba(255, 255, 255, 0.637);
+}
+
+.orderlink{
+    
+    cursor: pointer;
+    
 }

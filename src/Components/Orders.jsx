@@ -5,11 +5,11 @@ const Orders = () => {
     <div className="background">
       <div className="container">
         <div className="topic">
-          <h1 className="cross" >✖</h1>
+        <h1 className="cross" >✖</h1>
           <h1 className="top1">Order A Cake</h1>
           <p className="top2">You can design your own cake, Exactly as you would like it!</p>
           
-          <div className="container form-container">
+          <div className="con form-con">
             <form action="" method="post">
               <div className="input-container">
                 <div className="row">

@@ -11,8 +11,9 @@ import img6 from "./Assets/Images/backgroundcake.png"
 
 const Contact = () => {
   return (
-      <div className="contactContainer">
+      <div >
       <Navbar activePage = "contact"/>
+      <div className="contactContainer">
       <div className="con-outer-row">
 
         <div className="con-outer-col1">
@@ -45,6 +46,7 @@ const Contact = () => {
 
      
       <FooterComponent activePage = "contact"/>
+      </div>
       </div>
         
   )
