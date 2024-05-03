@@ -8,6 +8,7 @@ const App = () => {
   return (
     <div>
       <Navbar activePage = "home"/>
+      <br/>
       <Banner/>
       <SpecialEvents/>
       <FooterComponent/>

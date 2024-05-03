@@ -1,6 +1,8 @@
 import "./CSS/Navbar.css";
 import { Link } from "react-router-dom";
 import Logo from "./Assets/Images/Logo.png";
+import loginlogo from "./Assets/Images/login-logo.png";
+import cart from "./Assets/Images/cart.png";
 const Navbar = (props) => {
   return (
     <div>
@@ -32,7 +34,9 @@ const Navbar = (props) => {
           <div className="icon-list">
             <div className="row">
               <div className="icon-container">
-                <p>Icons</p>
+                <p><Link to="/Login" ><img src={loginlogo} alt="" className="navloginicon" /></Link>&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <img src={cart} alt="" className="navloginicon" /></p>
               </div>
             </div>
           </div>

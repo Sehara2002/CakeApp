@@ -21,6 +21,10 @@
     margin-bottom: 20px;
     margin-top:50px;
 }
+.topic{
+    text-align: center;
+    padding-top: 20px;
+}
 .card{
     width:400px;
     height:500px;
