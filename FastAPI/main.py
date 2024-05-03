@@ -2,16 +2,19 @@ from fastapi import FastAPI
 from bson import ObjectId
 from DB.database import collection
 from Models.model import User 
+from fastapi.middleware.cors import CORSMiddleware
+from routes.route import router
 
 
 app = FastAPI()
 
-data =  {"name":"Shehara","age":23,"email":"Shehara1010@gmail.com"}
-@app.get("/adduser")
-async def addUser():
-    result = collection.insert_once(data)
-    return {"Insert Id":result.insert_id}
+# origins = [
+#     'http://localhost:3000'
+# ]
 
-@app.get("/")
-async def getUser():
-    return {"Message":"Hello Everyone"}
+# app.add_middleware(
+#     CORSMiddleware,
+#     allow_origins=origins,
+# )
+
+app.include_router(router)
