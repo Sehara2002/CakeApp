@@ -1,11 +1,12 @@
 import "./CSS/Orders.css";
+import { Link } from "react-router-dom";
 
 const Orders = () => {
   return (
     <div className="background">
       <div className="container">
         <div className="topic">
-        <h1 className="cross" >✖</h1>
+        <Link to='/'><button><h1 className="cross">✖</h1></button></Link>
           <h1 className="top1">Order A Cake</h1>
           <p className="top2">You can design your own cake, Exactly as you would like it!</p>
           

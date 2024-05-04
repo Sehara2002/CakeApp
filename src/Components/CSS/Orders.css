@@ -43,10 +43,12 @@
 
 .row{
     display: flex;
+    
 }
 
 .col{
     flex-basis: 50%;
+    
 }
 
 .label,.btn{
@@ -110,10 +112,10 @@
     color:white;
     position: absolute;
     top:19px;
-    left:1860px;
+    left:1820px;
     padding: 10px 20px;
     background-color: rgba(255, 255, 255, 0.205);
-    border-radius: 500px;
+    border-radius: 600px;
     cursor: pointer;
 }
 
