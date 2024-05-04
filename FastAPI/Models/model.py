@@ -17,3 +17,12 @@ class Cake(BaseModel):
     cakeType:str
     cakeWeight:float
     cakePrice:float
+
+class Order(BaseModel):
+    customerName:str
+    cakeName:str
+    cakeWeight:float
+    cakeQuantity:int
+    cakePrice:float
+    OrderedDate:str
+    
