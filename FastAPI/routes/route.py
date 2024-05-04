@@ -1,10 +1,10 @@
 from fastapi import APIRouter,Depends, HTTPException
-from Models.model import User
-from DB.database import collection
+from fastapi_mail import FastMail, MessageSchema, ConnectionConfig
+from Models.model import User,Message
+from DB.database import collection, collection_messages
 from Schemas.schema import list_serial
 from bson import ObjectId
 from Schemas.schema import login_user
-import jwt
 from jwt import encode as jwt_encode
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 router = APIRouter()
@@ -31,6 +31,15 @@ async def add_user(user:User):
         
     return dict_user
     
+@router.post("/contacts")
+async def contacts(message:Message):
+    message_pack = dict(message)
+    result = collection_messages.insert_one(message_pack)
+    token = generate_token(message.email)
+    message_pack["_id"] = str(message_pack["_id"])
+    message_pack["token"] = token
+    return message_pack
+
 @router.get("/")
 async def getUsers():
     users = list_serial(collection.find())

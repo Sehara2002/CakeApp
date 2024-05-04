@@ -1,15 +1,32 @@
 import "./CSS/Contact.css"
 import FooterComponent from "./FooterComponent"
 import Navbar from "./Navbar"
-
+import { useNavigate } from "react-router-dom"
 import conImg from "./Assets/Images/conCake.png"
 import mail from "./Assets/Images/EmailIcon.png"
 import call from "./Assets/Images/CallIcon.png"
-
+import axios from 'axios'
 import img6 from "./Assets/Images/backgroundcake.png"
+import { useState } from "react"
 
 
 const Contact = () => {
+  const [fullname, setfullName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const navigate  = useNavigate();
+  
+  const handleContact = () =>{
+    axios
+    .post('http://localhost:8000/contacts', {fullname,email,message})
+    .then(response=>{
+      navigate('/contacts')
+      {alert("message sended")}
+    })
+    .catch(error=>{
+      console.log(error)
+    });
+  };
   return (
       <div >
       <Navbar activePage = "contact"/>
@@ -35,10 +52,10 @@ const Contact = () => {
           </div>
         </div>
         <div className="con-inner-row2">
-          <input className="detail1" placeholder="Full Name" /><br/>
-          <input className="detail2" placeholder="Email" /><br/>
-          <textarea className="detail3" placeholder="Message" rows="7" ></textarea>
-          <div className="send"><button>Send</button></div>
+          <input className="detail1" placeholder="Full Name" value={fullname} onChange={e=>setfullName(e.target.value)}/><br/>
+          <input className="detail2" placeholder="Email" value={email} onChange={e=>setEmail(e.target.value)}/><br/>
+          <textarea className="detail3" placeholder="Message" rows="7" value={message} onChange={e=>setMessage(e.target.value)}></textarea>
+          <div className="send"><button onClick={handleContact}>Send</button></div>
         </div>
         </div>
       </div>
