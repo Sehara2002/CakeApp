@@ -13,19 +13,23 @@ router = APIRouter()
 SECRET_KEY = "your-secret-key-goes-here"
 security = HTTPBearer()
 
+def generate_token(email: str) -> str:
+ payload = {"email": email}
+ token = jwt_encode(payload, SECRET_KEY, algorithm="HS256")
+ return token
+
 @router.post("/signup")
 async def add_user(user:User):
-    result = collection.insert_one(dict(user))
-    if(result):
-        return{
-            "message":"User Added",
-            "status":200
-        }
-    else:
-        return{
-            "message":"Cannot Add",
-            "status":422
-        }
+    existing_user = collection.find_one({"email": user.email})
+    if existing_user:
+        return {"message": "User already exists"}
+    dict_user = dict(user)
+    result = collection.insert_one(dict_user)
+    token = generate_token(user.email)
+    dict_user["_id"] = str(dict_user["_id"])
+    dict_user["token"] = token
+        
+    return dict_user
     
 @router.get("/")
 async def getUsers():

@@ -19,10 +19,20 @@ function Signup() {
   const navigate = useNavigate();
 
   const handleSignup = () =>{
-    axios.post('http://localhost:8000/signup', {name,age,gender,address,contact,email,username,password})
+    axios
+    .post('http://localhost:8000/signup', {name,age,gender,address,contact,email,username,password})
     .then(response => {
       setMessage(response.data.message);
-      const {name, age, gender, address, contact, email, username, password,token} = response.data;
+      const {name, age, gender, address, contact, email, username, password, token} = response.data;
+      localStorage.setItem('name',name);
+      localStorage.setItem('age',age);
+      localStorage.setItem('gender',gender);
+      localStorage.setItem('address',address);
+      localStorage.setItem('contact',contact);
+      localStorage.setItem('email',email);
+      localStorage.setItem('username',username);
+      localStorage.setItem('password',password);
+      localStorage.setItem('token',token);
       navigate('/');
     })
     .catch(error =>{
@@ -39,7 +49,7 @@ function Signup() {
               <div className='column'>
                 <h1 className='title'>SignUp</h1>
                 <hr color='darkgoldenrod'/>
-              <form className='form' onSubmit={handleSignup}>
+              
                 <div className='borderupper'>
                   <div className='mar'>
                 
@@ -72,15 +82,16 @@ function Signup() {
                     </div>
                 <div className='subset'>
                   <div className='left1'>
-                    <input type='submit'/>
+                    <button onClick={handleSignup}>Submit</button>
                   </div>
                   <div className='right2'>
-                    <input type='reset'/>
+                  <button onClick={handleSignup}>Reset</button>
                   </div>
                   
                 </div>
                                  
-              </form>
+              
+              
           </div>
       </div>
     </div>
