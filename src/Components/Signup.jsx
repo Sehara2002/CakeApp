@@ -1,11 +1,17 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import api from "../../api/api"
 import "./CSS/Signup.css"
 import { useNavigate } from 'react-router-dom'
 import img5 from "./Assets/Images/cupcake.jpg"
 import axios from 'axios'
 
-function SignUp(){
+
+ 
+
+
+
+
+function Signup() {
   const [name, setName] = useState('');
   const [age, setAge] = useState(0);
   const [gender, setGender] = useState('Male');
@@ -23,17 +29,13 @@ function SignUp(){
     .then(response => {
       setMessage(response.data.message);
       const {name, age, gender, address, contact, email, username, password,token} = response.data;
+      navigate('/');
     })
     .catch(error =>{
       console.error(error);
       setMessage("Error try again later");
     });
-  }
-};
-
-
-
-function Signup() {
+  };
   return (
     <><div className='container'>
           <div className='row'>
@@ -89,7 +91,7 @@ function Signup() {
       </div>
     </div>
 </>
-  )
+  );
 }
 
 
