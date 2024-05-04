@@ -1,5 +1,6 @@
 from pydantic import BaseModel
 
+
 class User(BaseModel):
     name:str
     age:int
@@ -10,7 +11,11 @@ class User(BaseModel):
     username:str
     password:str
 
-    #used external symbols
+
+class Message(BaseModel):
+    fullname:str
+    email:str
+    message:str
 
 class Cake(BaseModel):
     cakeName:str

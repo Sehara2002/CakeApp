@@ -9,5 +9,4 @@ db = client.Cake_Odyssey
 collection = db["cake_users"]
 cake_collection = db["cakes"]
 order_collection = db["orders"]
-
-
+collection_messages = db["user_messages"]

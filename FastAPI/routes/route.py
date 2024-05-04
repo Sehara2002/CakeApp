@@ -1,6 +1,6 @@
 from fastapi import APIRouter,Depends, HTTPException
-from Models.model import User,Cake,Order
-from DB.database import collection,cake_collection,order_collection
+from Models.model import User,Cake,Message,Order
+from DB.database import collection,cake_collection,collection_messages,order_collection
 from Schemas.schema import list_serial,login_user,getCakes,getOrders
 from bson import ObjectId
 import jwt
@@ -31,6 +31,15 @@ async def add_user(user:User):
         
     return dict_user
     
+@router.post("/contacts")
+async def contacts(message:Message):
+    message_pack = dict(message)
+    result = collection_messages.insert_one(message_pack)
+    token = generate_token(message.email)
+    message_pack["_id"] = str(message_pack["_id"])
+    message_pack["token"] = token
+    return message_pack
+
 @router.get("/")
 async def getUsers():
     users = list_serial(collection.find())
