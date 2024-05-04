@@ -38,7 +38,7 @@ const About = () => {
           <p>
           We at Fab Foods (Pvt) Ltd, strive to be recognized as a manufacturing best quality cakes, gateaux, pastries, bakery products, ready to eat meals, beverages & providing outdoor catering services.
           </p>
-        </div>
+        </div><br/><br/><br/><br/><br/><br/>
         <h1 className="main-topic-about">Achievements</h1>
       <div className="p1">
           <p>
