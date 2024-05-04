@@ -1,55 +1,84 @@
+import { useEffect, useState } from "react";
 import "./CSS/Orders.css";
 import { Link } from "react-router-dom";
 
 const Orders = () => {
+  const [data, setData] = useState(null);
+  const inputHandler = (e) => {
+    setData({ ...data, [e.target.name]: e.target.value })
+  }
+
+  useEffect(()=>{
+    let date = new Date();
+    setData({...data,["OrderedTime"]:date.toLocaleTimeString(),["OrderedDate"]:date.toLocaleDateString()});
+  },[]);
+
+
+  const placeOrder = async () => {
+    
+    console.log(data);
+    fetch("http://localhost:8000/api/ord", {
+      method: "POST",
+      header: {
+        "Content-Type": "application/json"
+      },
+      body:JSON.stringify(data),
+    }).then(alert("Order Placed Successfully"));
+
+
+  }
+  const orderPlace = () => {
+    console.log(data);
+    placeOrder();
+  }
   return (
     <div className="background">
       <div className="container">
         <div className="topic">
-        <Link to='/'><button><h1 className="cross">✖</h1></button></Link>
+          <Link to='/'><button><h1 className="cross">✖</h1></button></Link>
           <h1 className="top1">Order A Cake</h1>
           <p className="top2">You can design your own cake, Exactly as you would like it!</p>
-          
+
           <div className="con form-con">
-            <form action="" method="post">
+            <form method="post">
               <div className="input-container">
                 <div className="row">
                   <div className="col">
                     <div className="input-group">
-                      <label htmlFor="shape" className="label shapeL">Shape</label><br/>
-                      <input type="text" id="shape" className="input shape" placeholder="Round" />
+                      <label htmlFor="shape" className="label shapeL">Shape</label><br />
+                      <input type="text" id="shape" className="input shape" name="shape" placeholder="Round" onChange={(e) => inputHandler(e)} />
                     </div>
                   </div>
                   <div className="col">
                     <div className="input-group">
-                      <label htmlFor="level" className="label levelL">Level</label><br/>
-                      <input type="text" id="level" className="input level" placeholder="1" />
+                      <label htmlFor="level" className="label levelL">Level</label><br />
+                      <input type="text" id="level" name="level" className="input level"  placeholder="1" onChange={(e) => inputHandler(e)} />
                     </div>
                   </div>
                 </div>
                 <div className="row">
                   <div className="col">
                     <div className="input-group">
-                      <label htmlFor="size" className="label sizeL">Size</label><br/>
-                      <input type="text" id="size" className="input size" placeholder="4 inches" />
+                      <label htmlFor="size" className="label sizeL">Size</label><br />
+                      <input type="text" id="size" name="size" className="input size"  placeholder="4 inches" onChange={(e) => inputHandler(e)} />
                     </div>
                   </div>
                   <div className="col">
                     <div className="input-group">
-                      <label htmlFor="flavour" className="label flavourL">Flavour</label><br/>
-                      <input type="text" id="flavour" className="input flavour" placeholder="cholocate" /></div>
+                      <label htmlFor="flavour" className="label flavourL">Flavour</label><br />
+                      <input type="text" id="flavour" name="flavour" className="input flavour"  placeholder="cholocate" onChange={(e) => inputHandler(e)} /></div>
                   </div>
                 </div>
-                
+
               </div>
               <div className="details">
-                <input type="text" className="inp name" placeholder="Your Name" /><br/>
-                <input type="email" className="inp email1" placeholder="Your Email"/><br/>
-                <input type="text" className="inp number" placeholder="Phone Number"/><br/>
-                <textarea className="inp add-txt" placeholder="Address" rows="6" ></textarea>
+                <input type="text" className="inp name" name="customerName" placeholder="Your Name"  onChange={(e) => inputHandler(e)} /><br />
+                <input type="email" className="inp email1" name="customerEmail" placeholder="Your Email"  onChange={(e) => inputHandler(e)} /><br />
+                <input type="text" className="inp number" name="customerContact" placeholder="Phone Number"  onChange={(e) => inputHandler(e)} /><br />
+                <textarea className="inp add-txt" placeholder="Address" name="customerAddress" rows="6"  onChange={(e) => inputHandler(e)}></textarea>
               </div>
               <div className="order-btn">
-                <button className="o-btn">Order</button>
+                <input type="button" className="o-btn" value="Order" onClick={() => { orderPlace() }} />
               </div>
             </form>
           </div>

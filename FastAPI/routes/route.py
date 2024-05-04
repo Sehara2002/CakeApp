@@ -89,7 +89,7 @@ async def deleteOrder(id:str):
     else:
         return{"message":"Cannot Delete","status":400}
 
-@router.post("/orders")
+@router.post("/api/ord")
 async def placeOrder(order:Order):
     response = order_collection.insert_one(dict(order))
     if response:
