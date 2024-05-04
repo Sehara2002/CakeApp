@@ -21,3 +21,15 @@ def login_user(user)->dict:
         "password":user["password"],
         "name":user["name"]
     }
+    
+def getIndividualCake(cake)->dict:
+    return{
+        "id":str(cake["_id"]),
+        "cakeName":cake["cakeName"],
+        "cakeType":cake["cakeType"],
+        "cakeWeight":float(cake["cakeWeight"]),
+        "cakePrice":float(cake["cakePrice"])
+    }
+
+def getCakes(cakes)->list:
+    return[getIndividualCake(cake) for cake in cakes]

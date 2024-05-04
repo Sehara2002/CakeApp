@@ -33,7 +33,7 @@ function Signup() {
       localStorage.setItem('username',username);
       localStorage.setItem('password',password);
       localStorage.setItem('token',token);
-      navigate('/');
+      navigate('/login');
     })
     .catch(error =>{
       console.error(error);

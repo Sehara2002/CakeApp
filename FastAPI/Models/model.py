@@ -17,3 +17,8 @@ class Message(BaseModel):
     email:str
     message:str
 
+class Cake(BaseModel):
+    cakeName:str
+    cakeType:str
+    cakeWeight:float
+    cakePrice:float

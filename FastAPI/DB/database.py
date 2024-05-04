@@ -7,6 +7,8 @@ client = MongoClient(uri)
 
 db = client.Cake_Odyssey
 collection = db["cake_users"]
+cake_collection = db["cakes"]
 collection_messages = db["user_messages"]
+
 
 
