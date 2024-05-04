@@ -40,22 +40,11 @@ const Orders = () => {
                       <input type="text" id="flavour" className="input flavour" placeholder="cholocate" /></div>
                   </div>
                 </div>
-                <div className="row">
-                  <div className="col">
-                    <div className="input-group">
-                      <button className="btn btn1">PickUp</button>
-                    </div>
-                  </div>
-                  <div className="col">
-                    <div className="input-group">
-                      <button className="btn btn2">Delivery</button>
-                    </div>
-                  </div>
-                </div>
+                
               </div>
               <div className="details">
                 <input type="text" className="inp name" placeholder="Your Name" /><br/>
-                <input type="email" className="inp email" placeholder="Your Email"/><br/>
+                <input type="email" className="inp email1" placeholder="Your Email"/><br/>
                 <input type="text" className="inp number" placeholder="Phone Number"/><br/>
                 <textarea className="inp add-txt" placeholder="Address" rows="6" ></textarea>
               </div>

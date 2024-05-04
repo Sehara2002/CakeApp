@@ -9,7 +9,8 @@ from routes.route import router
 app = FastAPI()
 
 origins = [
-    'http://localhost:5173'
+    'http://localhost:5173',
+    'https://rainbow-halva-98f0e6.netlify.app'
 ]
 
 app.add_middleware(

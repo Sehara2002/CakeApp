@@ -9,7 +9,6 @@ import Login from './Components/Login.jsx'
 import Signup from './Components/Signup.jsx'
 import './index.css'
 import {createBrowserRouter,RouterProvider} from 'react-router-dom';
-import ApiComponent from './Components/ApiComponent.jsx'
 
 const router = createBrowserRouter([
   {
@@ -40,9 +39,6 @@ const router = createBrowserRouter([
   },{
     path:"/signup",
     element:<Signup/>,
-  },{
-    path:"/apiComponent",
-    element:<ApiComponent/>,
   }
 ])
 

@@ -30,7 +30,11 @@
 .contactUs2{
     margin: -700px 0 0 400px;
 }
-
+.contactContainer{
+    width:100%;
+    position: absolute;
+    top:100px;
+}
 .con-outer-row{
     display: flex;
 }

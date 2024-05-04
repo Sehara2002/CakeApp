@@ -6,7 +6,7 @@
     margin-left:auto;
     margin-right:auto;
     margin-top: 80px;
-    height:85vh;
+    height:80vh;
     width:98%;
     overflow: hidden;
     background-color: #E9DBBD;
@@ -20,7 +20,7 @@
     font-weight: 800;
     position:absolute;
     left:250px;
-    top:150px;
+    top:180px;
     animation: animate-text1;
     animation-duration: 3s;
     animation-delay: 0s;
@@ -32,7 +32,7 @@
     font-family: "Kaushan Script", cursive;
     font-weight: 200;
     position:absolute;
-    top:350px;
+    top:380px;
     left:450px;
     animation: animate-text2;
     animation-duration: 3s;
@@ -94,13 +94,13 @@
     flex-basis:50%;
 }
 .banner-img{
-    height:600px;
-    width:700px;
+    height:700px;
+    width:800px;
     position: absolute;
-    top:180px;
-    left:1100px;
+    top:158px;
+    left:1056px;
     justify-self: center;
-    border-radius: 50px 0px 50px 0px;
+    border-radius: 50px 50px 50px 50px;
     animation-delay: 3s;
     animation: image-loader;
     animation-duration: 3s;
