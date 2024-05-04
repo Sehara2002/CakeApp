@@ -4,6 +4,12 @@ import Logo from "./Assets/Images/Logo.png";
 import loginlogo from "./Assets/Images/login-logo.png";
 import cart from "./Assets/Images/cart.png";
 const Navbar = (props) => {
+  const Showuser = ()=>{
+    if(localStorage.getItem("username").length>0){
+      return <p className='username-p'>{localStorage.getItem("username")}</p>;
+    }
+  }
+
   return (
     <div>
       <div className="container">
@@ -35,6 +41,10 @@ const Navbar = (props) => {
             <div className="row">
               <div className="icon-container">
                   
+                <div>
+                  <Showuser/>
+                </div>
+              
                 <p><Link to="/Login" >
                   <img src={loginlogo} alt="" className="navloginicon" /></Link>&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;
