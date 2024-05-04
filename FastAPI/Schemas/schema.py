@@ -13,3 +13,11 @@ def individual_serial(user) -> dict:
 
 def list_serial(users) -> list:
     return[individual_serial(user) for user in users]
+
+def login_user(user)->dict:
+    return {
+        "id":str(user["_id"]),
+        "username":user["username"],
+        "password":user["password"],
+        "name":user["name"]
+    }
