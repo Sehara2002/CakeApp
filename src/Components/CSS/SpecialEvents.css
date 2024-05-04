@@ -21,10 +21,7 @@
     margin-bottom: 20px;
     margin-top:50px;
 }
-.topic{
-    text-align: center;
-    padding-top: 20px;
-}
+
 .card{
     width:400px;
     height:500px;
@@ -93,6 +90,7 @@
 }
 .story{
     margin-top:30px;
+    margin-bottom:30px;
     width:1400px;
     height:80vh;
     margin-left: auto;

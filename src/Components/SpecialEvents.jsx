@@ -10,6 +10,8 @@ import cupcake from "./Assets/Images/cupcake.jpeg";
 import cakepop from "./Assets/Images/cakepop.jpeg";
 import anvcake from "./Assets/Images/anvcake.jpeg";
 import specialcake from "./Assets/Images/specialcake.jpeg";
+import { SlArrowRightCircle,SlArrowLeftCircle } from "react-icons/sl";
+
 
 const SpecialEvents = () => {
   const [slide, setSlide] = useState(0);
@@ -49,7 +51,7 @@ const SpecialEvents = () => {
       <div className="Special-Events container">
         <div className="row">
           <div className="arrow"onClick={prev}>
-            <h1 className="prev">{"<"}</h1>
+            <h1 className="prev"><SlArrowLeftCircle /></h1>
           </div>
           <div className="container">
           <div className={`container-slides ${slide===1?"display-slide":""}`}>
@@ -107,7 +109,7 @@ const SpecialEvents = () => {
           </div>
 
           <div className = "arrow" onClick={next}>
-            <h1 className="next">{">"}</h1>
+            <h1 className="next"><SlArrowRightCircle /></h1>
           </div>
         </div>
         </div>
@@ -127,7 +129,7 @@ const SpecialEvents = () => {
             Since 1979 with years of experience and commitment to our customers, a goal that has remained a constant is to strive for a synergy between traditions from our humble beginnings, and all that we have learnt in the years gone by. This formula, along with our uncompromising quality and taste, is what has strongly grounded us as an indisputable brand name in the food and beverage industry.
 Fab is renowned for signature cakes and gateaux. This trademark can be traced back to 1979 when Chandra Madanayake launched her confectionary store in her front garden beside Galle Road. The outlet remains present to this day, still teeming with ever-eager customers. 
 In just over five years, subsequent to the demand that was generated, we were able to restructure and change our course, and specialize in the pastry business as well.
-
+<br/><br/><br/><br/><br/><br/>
             </p>
         </div>
 
