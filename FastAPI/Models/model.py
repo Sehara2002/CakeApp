@@ -10,3 +10,5 @@ class User(BaseModel):
     username:str
     password:str
 
+    #used external symbols
+
