@@ -1,13 +1,13 @@
 from fastapi import APIRouter,Depends, HTTPException
-from Models.model import User
-from DB.database import collection
-from Schemas.schema import list_serial
+from Models.model import User,Cake
+from DB.database import collection,cake_collection
+from Schemas.schema import list_serial,login_user,getCakes
 from bson import ObjectId
-from Schemas.schema import login_user
 import jwt
 from jwt import encode as jwt_encode
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 router = APIRouter()
+
 
 # Secret key for signing the token
 SECRET_KEY = "your-secret-key-goes-here"
@@ -44,4 +44,25 @@ async def loginUser(username:str)->dict:
         "password":user["password"]
     }
 
+@router.delete("/{id}")
+async def deleteUser(id:str):
+    collection.delete_one({"_id":ObjectId(id)})
 
+@router.post("/cakes")
+async def addCake(cake:Cake):
+    response = cake_collection.insert_one(dict(cake))
+    if response:
+        return{
+            "message":"Success",
+            "status":200
+        }
+    else:
+        return{
+            "message":"Cannot Insert",
+            "status":400
+        }
+
+@router.get("/cakes")
+async def get_Cakes():
+    result = getCakes(cake_collection.find())
+    return result

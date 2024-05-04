@@ -80,6 +80,8 @@
     width: 42px;
     height: 42px;
     cursor: pointer;
+    margin-left:10px;
+    margin-right: 10px;
 }
 .username-p{
     font-size:30px;

@@ -12,3 +12,8 @@ class User(BaseModel):
 
     #used external symbols
 
+class Cake(BaseModel):
+    cakeName:str
+    cakeType:str
+    cakeWeight:float
+    cakePrice:float
