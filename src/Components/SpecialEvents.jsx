@@ -10,6 +10,8 @@ import cupcake from "./Assets/Images/cupcake.jpeg";
 import cakepop from "./Assets/Images/cakepop.jpeg";
 import anvcake from "./Assets/Images/anvcake.jpeg";
 import specialcake from "./Assets/Images/specialcake.jpeg";
+import { SlArrowRightCircle,SlArrowLeftCircle } from "react-icons/sl";
+
 
 const SpecialEvents = () => {
   const [slide, setSlide] = useState(0);
@@ -49,7 +51,7 @@ const SpecialEvents = () => {
       <div className="Special-Events container">
         <div className="row">
           <div className="arrow"onClick={prev}>
-            <h1 className="prev">{"<"}</h1>
+            <h1 className="prev"><SlArrowLeftCircle /></h1>
           </div>
           <div className="container">
           <div className={`container-slides ${slide===1?"display-slide":""}`}>
@@ -107,7 +109,7 @@ const SpecialEvents = () => {
           </div>
 
           <div className = "arrow" onClick={next}>
-            <h1 className="next">{">"}</h1>
+            <h1 className="next"><SlArrowRightCircle /></h1>
           </div>
         </div>
         </div>

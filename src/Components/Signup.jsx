@@ -5,15 +5,9 @@ import { useNavigate } from 'react-router-dom'
 import img5 from "./Assets/Images/cupcake.jpg"
 import axios from 'axios'
 
-
- 
-
-
-
-
 function Signup() {
   const [name, setName] = useState('');
-  const [age, setAge] = useState(0);
+  const [age, setAge] = useState();
   const [gender, setGender] = useState('Male');
   const [address, setAddress] = useState('');
   const [contact, setContact] = useState('');
