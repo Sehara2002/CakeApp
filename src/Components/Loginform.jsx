@@ -4,6 +4,13 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom"
 
 const Loginform = () => {
+  const [userData, setUserData] = useState({});
+
+  const userLogin = async (username)=>{
+      const user = await fetch(`http://127.0.0.1:8000/login/${username}`)
+      const useValues = await user.json();
+      setUserData(useValues)
+  }
 
   const navigate = useNavigate();
   const pw = useRef(null);
@@ -13,8 +20,10 @@ const Loginform = () => {
   const login = () => {
     let username = un.current.value.trim();
     let password = pw.current.value.trim();
-
-    if(username === "Admin" && password == "abc@123"){
+    userLogin(username);
+    if(username === userData["username"] && password == userData["password"]){
+      localStorage.setItem("username",userData["username"]);
+      alert(`Login Successful ${userData['username']}`);
       navigate("/");
     }else{
       alert("Login Failed");

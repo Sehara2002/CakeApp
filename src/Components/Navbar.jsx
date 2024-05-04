@@ -34,9 +34,11 @@ const Navbar = (props) => {
           <div className="icon-list">
             <div className="row">
               <div className="icon-container">
-                <p><Link to="/Login" ><img src={loginlogo} alt="" className="navloginicon" /></Link>&nbsp;&nbsp;&nbsp;&nbsp;
+                  
+                <p><Link to="/Login" >
+                  <img src={loginlogo} alt="" className="navloginicon" /></Link>&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                <img src={cart} alt="" className="navloginicon" /></p>
+                <img src={cart} alt="" className="navloginicon"/></p>
               </div>
             </div>
           </div>
