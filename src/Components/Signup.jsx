@@ -1,5 +1,4 @@
-import React, {useState} from 'react'
-import api from "../../api/api"
+import {useState} from 'react'
 import "./CSS/Signup.css"
 import { useNavigate } from 'react-router-dom'
 import img5 from "./Assets/Images/cupcake.jpg"

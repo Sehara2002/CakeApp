@@ -1,8 +1,7 @@
 from fastapi import APIRouter,Depends, HTTPException
-from Models.model import User,Cake,Message
-from DB.database import collection,cake_collection,collection_messages
-from Schemas.schema import list_serial,login_user,getCakes
-from Schemas.schema import login_user
+from Models.model import User,Cake,Message,Order
+from DB.database import collection,cake_collection,collection_messages,order_collection
+from Schemas.schema import list_serial,login_user,getCakes,getOrders
 from bson import ObjectId
 import jwt
 from jwt import encode as jwt_encode
@@ -75,4 +74,23 @@ async def addCake(cake:Cake):
 @router.get("/cakes")
 async def get_Cakes():
     result = getCakes(cake_collection.find())
+    return result
+
+@router.post("/orders")
+async def placeOrder(order:Order):
+    response = order_collection.insert_one(dict(order))
+    if response:
+        return{
+            "message":"Success",
+            "status":200
+        }
+    else:
+        return{
+            "message":"Cannot Insert",
+            "status":400
+        }
+
+@router.get("/orders")
+async def get_orders():
+    result = getOrders(order_collection.find())
     return result

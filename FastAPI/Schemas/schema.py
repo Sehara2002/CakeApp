@@ -33,3 +33,17 @@ def getIndividualCake(cake)->dict:
 
 def getCakes(cakes)->list:
     return[getIndividualCake(cake) for cake in cakes]
+
+def getIndividualOrder(order)->dict:
+    return{
+        "orderId":str(order["_id"]),
+        "customerName":order["customerName"],
+        "cakeName":order["cakeName"],
+        "cakeWeight":float(order["cakeWeight"]),
+        "cakeQuantity":float(order["cakeQuantity"]),
+        "cakePrice":float(order["cakePrice"]),
+        "OrderedDate":order["OrderedDate"]
+    }
+
+def getOrders(orders)->list:
+    return [getIndividualOrder(order) for order in orders]
