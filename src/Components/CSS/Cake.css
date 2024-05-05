@@ -114,8 +114,14 @@
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
-    margin-left: 200px;
 
+   
+
+}
+
+#but1{
+    display: flex;
+    justify-content: center;
 }
   
   

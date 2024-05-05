@@ -146,8 +146,13 @@ const Cakes = (props) => {
             </div>
 
         </div>
-       
+
+        <div id="but1">
         <Link to='/orders'><button class="but1"><span>Costumized One</span></button></Link> 
+
+        </div>
+       
+ 
 
 
         <FooterComponent activePage = "cakes"/>
