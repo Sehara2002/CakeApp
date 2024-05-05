@@ -60,11 +60,11 @@
 }
 
 
-.customie-order{
+/* .something{
     display: flex;
     justify-content: center;
 }
-.customie-order .customie-order-btn{
+.customie-order{
     background-color: #785F38; 
   border: none;
   color: white;
@@ -77,10 +77,11 @@
     width:50%;
     border-radius:40px;
     font-size: 20px;
+    font-family: "inter";
     
 }
 
-.customie-order-btn:hover{
+.customie-order:hover{
     background-color: #e7e0d5; 
     border-color: #785F38;
     color: rgb(4, 0, 0);
@@ -93,4 +94,8 @@
       width:50%;
       border-radius:40px;
       font-size: 20px;
+      font-family: "inter";
 }
+.something{
+    text-decoration: none;
+} */

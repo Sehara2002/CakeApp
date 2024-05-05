@@ -136,15 +136,13 @@ const Cakes = (props) => {
 
         </div>
        
-        <Link to='/orders'>
-        <div className="customie-order">
-            
-            <button className="customie-order-btn">
+       {/* <div className="something">
+       <div className="customie-order">
+        <Link to='/orders' className="cus-or-link">       
                 If you need a customize one ? 
-            </button>
-            
-        </div>
         </Link>
+        </div>
+        </div> */}
 
 
         <FooterComponent activePage = "cakes"/>
