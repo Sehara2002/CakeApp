@@ -65,7 +65,7 @@
             <tr>
                 <td>225531N</td>
                 <td>Tenura Pinsara</td>
-                <td>Figma Design, Login Page, CSS Decorations of Other components</td>
+                <td>Figma Design, Cake Page,CSS Decorations of Other components, </td>
             </tr>
         </tbody> 
     </table>
