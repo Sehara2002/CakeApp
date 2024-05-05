@@ -73,7 +73,7 @@
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
-  }
+}
   
   .button span {
     cursor: pointer;
@@ -114,7 +114,10 @@
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
-  }
+    margin-left: 200px;
+
+}
+  
   
   .but1 span {
     cursor: pointer;
