@@ -60,9 +60,6 @@
     margin-top: 0;
 }
 
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
 .button {
     display: inline-block;
     border-radius: 4px;
@@ -104,45 +101,3 @@
   }
 
   
-=======
->>>>>>> Stashed changes
-
-.customie-order{
-    display: flex;
-    justify-content: center;
-}
-.customie-order .customie-order-btn{
-    background-color: #785F38; 
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  height:50px;
-    width:50%;
-    border-radius:40px;
-    font-size: 20px;
-    
-}
-
-.customie-order-btn:hover{
-    background-color: #e7e0d5; 
-    border-color: #785F38;
-    color: rgb(4, 0, 0);
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    height:50px;
-      width:50%;
-      border-radius:40px;
-      font-size: 20px;
-<<<<<<< Updated upstream
-}
-=======
-}
->>>>>>> 59d3b79e155a7be4bfe8b514c493ff2fcee5bd5e
->>>>>>> Stashed changes
