@@ -55,7 +55,7 @@
             <tr>
                 <td>225512H</td>
                 <td>Judith Fernando</td>
-                <td>Figma Design, Order Page, CSS Decorations of Other components</td>
+                <td>Figma Design, Order Page, Contact Us page, CSS Decorations of Other components</td>
             </tr>
             <tr>
                 <td>225515U</td>
@@ -65,7 +65,7 @@
             <tr>
                 <td>225531N</td>
                 <td>Tenura Pinsara</td>
-                <td>Figma Design, Cake Page,CSS Decorations of Other components, </td>
+                <td>Figma Design, Cake Page, CSS Decorations of Other components</td>
             </tr>
         </tbody> 
     </table>

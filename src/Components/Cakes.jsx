@@ -1,6 +1,7 @@
 import FooterComponent from "./FooterComponent"
 import Navbar from "./Navbar"
 import "./CSS/Cake.css"
+import { Link } from "react-router-dom"
 
 import wedImg from "./Assets/Images/wedding-cake.png"
 import wedImg02 from "./Assets/Images/wedding-cake02.png"
@@ -30,17 +31,21 @@ const Cakes = (props) => {
                         <div class="pri">
                             <h3>Design 01</h3>
                             <h4>10$</h4>
+                            <button class="button"><span>Oder Now</span></button>
+                           
                         </div>
 
                     </div>
 
                     <div class="box">
                         <div id="image">
+                      
                          <img src={wedImg02} alt="Cake Image"/>
                         </div>
                         <div class="pri">
                             <h3>Design 02</h3>
                             <h4>10$</h4>
+                            <button class="button"><span>Oder Now</span></button>
                         </div>
 
                     </div>
@@ -52,6 +57,7 @@ const Cakes = (props) => {
                         <div class="pri">
                             <h3>Design 03</h3>
                             <h4>10$</h4>
+                            <button class="button"><span>Oder Now</span></button>
                         </div>
 
                     </div>
@@ -67,6 +73,7 @@ const Cakes = (props) => {
                         <div class="pri">
                             <h3>Design 01</h3>
                             <h4>10$</h4>
+                            <button class="button"><span>Oder Now</span></button>
                         </div>
 
                     </div>
@@ -78,6 +85,7 @@ const Cakes = (props) => {
                         <div class="pri">
                             <h3>Design 02</h3>
                             <h4>10$</h4>
+                            <button class="button"><span>Oder Now</span></button>
                         </div>
 
                     </div>
@@ -89,6 +97,7 @@ const Cakes = (props) => {
                         <div class="pri">
                             <h3>Design 03</h3>
                             <h4>10$</h4>
+                            <button class="button"><span>Oder Now</span></button>
                         </div>
 
                     </div>
@@ -104,6 +113,7 @@ const Cakes = (props) => {
                         <div class="pri">
                             <h3>Design 01</h3>
                             <h4>10$</h4>
+                            <button class="button"><span>Oder Now</span></button>
                         </div>
 
                     </div>
@@ -115,6 +125,7 @@ const Cakes = (props) => {
                         <div class="pri">
                             <h3>Design 02</h3>
                             <h4>10$</h4>
+                            <button class="button"><span>Oder Now</span></button>
                         </div>
 
                     </div>
@@ -126,6 +137,7 @@ const Cakes = (props) => {
                         <div class="pri">
                             <h3>Design 03</h3>
                             <h4>10$</h4>
+                            <button class="button"><span>Oder Now</span></button>
                         </div>
 
                     </div>
@@ -135,8 +147,15 @@ const Cakes = (props) => {
 
         </div>
        
-        
-
+        <Link to='/orders'>
+        <div className="customie-order">
+            
+            <button className="customie-order-btn">
+                If you need a customize one ? 
+            </button>
+            
+        </div>
+        </Link>
 
 
         <FooterComponent activePage = "cakes"/>

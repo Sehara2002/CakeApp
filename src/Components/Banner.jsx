@@ -40,7 +40,7 @@ const Banner = () => {
             </div>
 
             <div className="btn-container">
-              <Link to="/orders">
+              <Link to="/cakes">
               <button className="btn-order">
                 Order Now
               </button>
