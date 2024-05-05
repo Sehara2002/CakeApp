@@ -44,7 +44,7 @@ const Orders = () => {
     <div className="background">
       <div className="container">
         <div className="topic">
-          <Link to='/'><button><h1 className="cross">✖</h1></button></Link>
+          <Link to='/cakes'><button><h1 className="cross">✖</h1></button></Link>
           <h1 className="top1">Order A Cake</h1>
           <p className="top2">You can design your own cake, Exactly as you would like it!</p>
 
