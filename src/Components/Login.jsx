@@ -16,8 +16,6 @@ const Login = () => {
             <h1 className="login-heading">Login</h1>
           </center>
     
-
-
           <br/><br/>
           <hr color="darkgoldenrod" />
           <br/><br/>
