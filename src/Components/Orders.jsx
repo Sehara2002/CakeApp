@@ -1,8 +1,9 @@
 import { useEffect,useState } from "react";
 import "./CSS/Orders.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Orders = () => {
+  const navigate = useNavigate();
   const [data, setData] = useState({});
   //const [usedata, setUser] = useState({});
   //const [orderData, setOrder] = useState({});
@@ -22,6 +23,7 @@ const Orders = () => {
       headers:{"Content-Type":"application/json"},
       body:JSON.stringify(data),
     }).then(alert("Order Placed Successfully"))
+    .then(navigate("/"))
     
 
     console.log(JSON.stringify(data));
