@@ -31,7 +31,7 @@ const Cakes = (props) => {
                         <div class="pri">
                             <h3>Design 01</h3>
                             <h4>10$</h4>
-                            <button class="button"><span>Oder Now</span></button>
+                            <Link to='/orders'><button class="button"><span>Oder Now</span></button></Link> 
                            
                         </div>
 
@@ -45,7 +45,7 @@ const Cakes = (props) => {
                         <div class="pri">
                             <h3>Design 02</h3>
                             <h4>10$</h4>
-                            <button class="button"><span>Oder Now</span></button>
+                            <Link to='/orders'><button class="button"><span>Oder Now</span></button></Link> 
                         </div>
 
                     </div>
@@ -57,7 +57,7 @@ const Cakes = (props) => {
                         <div class="pri">
                             <h3>Design 03</h3>
                             <h4>10$</h4>
-                            <button class="button"><span>Oder Now</span></button>
+                            <Link to='/orders'><button class="button"><span>Oder Now</span></button></Link> 
                         </div>
 
                     </div>
@@ -73,7 +73,7 @@ const Cakes = (props) => {
                         <div class="pri">
                             <h3>Design 01</h3>
                             <h4>10$</h4>
-                            <button class="button"><span>Oder Now</span></button>
+                            <Link to='/orders'><button class="button"><span>Oder Now</span></button></Link> 
                         </div>
 
                     </div>
@@ -85,7 +85,7 @@ const Cakes = (props) => {
                         <div class="pri">
                             <h3>Design 02</h3>
                             <h4>10$</h4>
-                            <button class="button"><span>Oder Now</span></button>
+                            <Link to='/orders'><button class="button"><span>Oder Now</span></button></Link> 
                         </div>
 
                     </div>
@@ -97,7 +97,7 @@ const Cakes = (props) => {
                         <div class="pri">
                             <h3>Design 03</h3>
                             <h4>10$</h4>
-                            <button class="button"><span>Oder Now</span></button>
+                            <Link to='/orders'><button class="button"><span>Oder Now</span></button></Link> 
                         </div>
 
                     </div>
@@ -113,7 +113,7 @@ const Cakes = (props) => {
                         <div class="pri">
                             <h3>Design 01</h3>
                             <h4>10$</h4>
-                            <button class="button"><span>Oder Now</span></button>
+                            <Link to='/orders'><button class="button"><span>Oder Now</span></button></Link> 
                         </div>
 
                     </div>
@@ -125,7 +125,7 @@ const Cakes = (props) => {
                         <div class="pri">
                             <h3>Design 02</h3>
                             <h4>10$</h4>
-                            <button class="button"><span>Oder Now</span></button>
+                            <Link to='/orders'><button class="button"><span>Oder Now</span></button></Link> 
                         </div>
 
                     </div>
@@ -137,7 +137,7 @@ const Cakes = (props) => {
                         <div class="pri">
                             <h3>Design 03</h3>
                             <h4>10$</h4>
-                            <button class="button"><span>Oder Now</span></button>
+                            <Link to='/orders'><button class="button"><span>Oder Now</span></button></Link> 
                         </div>
 
                     </div>
