@@ -53,12 +53,59 @@
     align-items: center;
     text-align: center;
     margin: 5px;
+    margin-top: 65px;
 }
 
 .pri h4{
     margin-top: 0;
 }
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #d1b9a2;
+    border: none;
+    color: #d2cccc;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  
+=======
+>>>>>>> Stashed changes
 
 .customie-order{
     display: flex;
@@ -93,4 +140,9 @@
       width:50%;
       border-radius:40px;
       font-size: 20px;
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> 59d3b79e155a7be4bfe8b514c493ff2fcee5bd5e
+>>>>>>> Stashed changes
