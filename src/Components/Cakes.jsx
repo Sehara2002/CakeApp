@@ -31,17 +31,21 @@ const Cakes = (props) => {
                         <div class="pri">
                             <h3>Design 01</h3>
                             <h4>10$</h4>
+                            <button class="button"><span>Oder Now</span></button>
+                           
                         </div>
 
                     </div>
 
                     <div class="box">
                         <div id="image">
+                      
                          <img src={wedImg02} alt="Cake Image"/>
                         </div>
                         <div class="pri">
                             <h3>Design 02</h3>
                             <h4>10$</h4>
+                            <button class="button"><span>Oder Now</span></button>
                         </div>
 
                     </div>
@@ -53,6 +57,7 @@ const Cakes = (props) => {
                         <div class="pri">
                             <h3>Design 03</h3>
                             <h4>10$</h4>
+                            <button class="button"><span>Oder Now</span></button>
                         </div>
 
                     </div>
@@ -68,6 +73,7 @@ const Cakes = (props) => {
                         <div class="pri">
                             <h3>Design 01</h3>
                             <h4>10$</h4>
+                            <button class="button"><span>Oder Now</span></button>
                         </div>
 
                     </div>
@@ -79,6 +85,7 @@ const Cakes = (props) => {
                         <div class="pri">
                             <h3>Design 02</h3>
                             <h4>10$</h4>
+                            <button class="button"><span>Oder Now</span></button>
                         </div>
 
                     </div>
@@ -90,6 +97,7 @@ const Cakes = (props) => {
                         <div class="pri">
                             <h3>Design 03</h3>
                             <h4>10$</h4>
+                            <button class="button"><span>Oder Now</span></button>
                         </div>
 
                     </div>
@@ -105,6 +113,7 @@ const Cakes = (props) => {
                         <div class="pri">
                             <h3>Design 01</h3>
                             <h4>10$</h4>
+                            <button class="button"><span>Oder Now</span></button>
                         </div>
 
                     </div>
@@ -116,6 +125,7 @@ const Cakes = (props) => {
                         <div class="pri">
                             <h3>Design 02</h3>
                             <h4>10$</h4>
+                            <button class="button"><span>Oder Now</span></button>
                         </div>
 
                     </div>
@@ -127,6 +137,7 @@ const Cakes = (props) => {
                         <div class="pri">
                             <h3>Design 03</h3>
                             <h4>10$</h4>
+                            <button class="button"><span>Oder Now</span></button>
                         </div>
 
                     </div>
