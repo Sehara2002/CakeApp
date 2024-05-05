@@ -1,9 +1,9 @@
 <h1>Welcome to the Cake Odyssey Web Portal</h1>
 
 <p>
-    We're a group of BSc hon's in AI, Faculty of Information Technology <br/>
-    We University of Moratuwa. This git repository contains the files regarding <br/>
-    to the our project. This project is done for our 2nd Assignment of the Web Technologies <br/> (IN-1621) Module.
+    We're a group of BSc hon's in AI, Faculty of Information Technology
+    We University of Moratuwa. This git repository contains the files regarding
+    to the our project. This project is done for our 2nd Assignment of the Web Technologies  (IN-1621) Module.
 </p>
 
 <h3>Pages of our Web Application</h3>
