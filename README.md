@@ -30,3 +30,42 @@
     <li>Python Fast API</li>
     <li>Mongo DB</li>
 </ul>
+
+<h3>Workload Distribution of Team Members</h3>
+<table>
+        <caption>Workload Matrix</caption>
+        <thead>
+              <tr>
+                <th>Index Number</th>
+                <th>Member Name</th>
+                <th>Task</th>
+              </tr>  
+        </thead>
+        <tbody>
+            <tr>
+                <td>225513L (leader)</td>
+                <td>Sehara Arunodya Fernando</td>
+                <td>Home Page, About Page, API for Order Placement, API for Login</td>
+            </tr>
+            <tr>
+                <td>225522M</td>
+                <td>Imasha Nilupul</td>
+                <td>Figma Design, Mongo DB Database, Message API,Signup Page</td>
+            </tr>
+            <tr>
+                <td>225512H</td>
+                <td>Judith Fernando</td>
+                <td>Figma Design, Order Page, CSS Decorations of Other components</td>
+            </tr>
+            <tr>
+                <td>225515U</td>
+                <td>Shihara Fernando</td>
+                <td>Figma Design, Login Page, CSS Decorations of Other components</td>
+            </tr>
+            <tr>
+                <td>225531N</td>
+                <td>Tenura Pinsara</td>
+                <td>Figma Design, Login Page, CSS Decorations of Other components</td>
+            </tr>
+        </tbody> 
+    </table>
