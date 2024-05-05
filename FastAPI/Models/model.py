@@ -25,16 +25,26 @@ class Cake(BaseModel):
     cakePrice: float
 
 
+"""class Order(BaseModel):
+    OrderedTime: str
+    OrderedDate: str
+    shape: str
+    level: str
+    flavour: str
+    customerName: str
+    customerEmail: str
+    customerContact: str
+    size: str
+    customerAddress: str
+"""
 class Order(BaseModel):
-    OrderedDate:str
     OrderedTime:str
-    customerAddress:str
-    customerContact:str
-    customerEmail:str
-    customerName:str
-    flavour:str
-    level:str
+    OrderedDate:str
     shape:str
+    level:str
+    flavour:str
+    customerName: str
+    customerEmail: str
+    customerContact: str
     size:str
-    
-    
+    customerAddress:str

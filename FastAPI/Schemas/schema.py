@@ -1,5 +1,5 @@
 def individual_serial(user) -> dict:
-    return {
+    return{
         "id": str(user["_id"]),
         "name": user["name"],
         "age": user["age"],
@@ -38,22 +38,43 @@ def getIndividualCake(cake) -> dict:
 def getCakes(cakes) -> list:
     return [getIndividualCake(cake) for cake in cakes]
 
-
+"""
 def getIndividualOrder(order) -> dict:
     return {
         "id": str(order["_id"]),
-        "OrderedDate": order["OrderedDate"],
         "OrderedTime": order["OrderedTime"],
-        "customerAddress": order["customerAddress"],
-        "customerContact": order["customerContact"],
-        "customerEmail": order["customerEmail"],
-        "customerName": order["customerName"],
-        "flavour": order["flavour"],
-        "level": order["level"],
+        "OrderedDate": order["OrderedDate"],
         "shape": order["shape"],
-        "size": order["size"]
+        "level": order["level"],
+        "flavour":order["flavour"],
+        "customerName": order["customerName"],     
+        "customerEmail": order["customerEmail"], 
+        "customerContact": order["customerContact"],  
+        "size": order["size"],       
+        "customerAddress": order["customerAddress"]
     }
 
 
 def getOrders(orders) -> list:
     return [getIndividualOrder(order) for order in orders]
+
+
+"""
+
+def getOrder(order)->dict:
+    return{
+        "id":str(order["_id"]),
+        "OrderedTime":order["OrderedTime"],
+        "OrderedDate":order["OrderedDate"],
+        "shape":order["shape"],
+        "level":order["level"],
+        "flavour":order["flavour"],
+        "customerName": order["customerName"],     
+        "customerEmail": order["customerEmail"], 
+        "customerContact": order["customerContact"],  
+        "size":order["size"],
+        "customerAddress":order["customerAddress"]
+    } 
+
+def getOrders(orders)->list:
+    return[getOrder(order) for order in orders]

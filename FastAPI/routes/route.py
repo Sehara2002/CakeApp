@@ -1,7 +1,7 @@
 from fastapi import APIRouter,Depends, HTTPException
 from Models.model import User,Cake,Message,Order
 from DB.database import collection,cake_collection,collection_messages,order_collection
-from Schemas.schema import list_serial,login_user,getCakes,getOrders
+from Schemas.schema import list_serial,login_user,getCakes,getOrders,individual_serial,getOrder
 from bson import ObjectId
 import jwt
 from jwt import encode as jwt_encode
@@ -40,10 +40,19 @@ async def contacts(message:Message):
     message_pack["token"] = token
     return message_pack
 
-@router.get("/")
+@router.get("/users")
 async def getUsers():
     users = list_serial(collection.find())
     return users
+
+@router.get("/users/{username}")
+async def getUsers(username:str)->dict:
+    users = login_user(collection.find_one({"username":username}))
+    return {
+        "username":users["username"],
+        "name":users["name"]
+    }
+
 
 @router.get("/login/{username}")
 async def loginUser(username:str)->dict:
@@ -53,7 +62,7 @@ async def loginUser(username:str)->dict:
         "password":user["password"]
     }
 
-@router.delete("/{id}")
+@router.delete("/users/{id}")
 async def deleteUser(id:str):
     result = collection.delete_one({"_id":ObjectId(id)})
     if result:
@@ -89,7 +98,7 @@ async def deleteOrder(id:str):
     else:
         return{"message":"Cannot Delete","status":400}
 
-@router.post("/api/ord")
+@router.post("/orders")
 async def placeOrder(order:Order):
     response = order_collection.insert_one(dict(order))
     if response:
