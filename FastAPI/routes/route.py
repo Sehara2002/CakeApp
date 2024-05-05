@@ -55,7 +55,12 @@ async def loginUser(username:str)->dict:
 
 @router.delete("/{id}")
 async def deleteUser(id:str):
-    collection.delete_one({"_id":ObjectId(id)})
+    result = collection.delete_one({"_id":ObjectId(id)})
+    if result:
+        return{"message":"Deleted","status":200}
+    else:
+        return{"message":"Cannot Delete","status":400}
+
 
 @router.post("/cakes")
 async def addCake(cake:Cake):
@@ -76,7 +81,15 @@ async def get_Cakes():
     result = getCakes(cake_collection.find())
     return result
 
-@router.post("/orders")
+@router.delete("/cakes/{id}")
+async def deleteOrder(id:str):
+    result = cake_collection.delete_one({"_id":ObjectId(id)})
+    if result:
+        return{"message":"Deleted","status":200}
+    else:
+        return{"message":"Cannot Delete","status":400}
+
+@router.post("/api/ord")
 async def placeOrder(order:Order):
     response = order_collection.insert_one(dict(order))
     if response:
@@ -94,3 +107,11 @@ async def placeOrder(order:Order):
 async def get_orders():
     result = getOrders(order_collection.find())
     return result
+
+@router.delete("/orders/{id}")
+async def deleteOrder(id:str):
+    result = order_collection.delete_one({"_id":ObjectId(id)})
+    if result:
+        return{"message":"Deleted","status":200}
+    else:
+        return{"message":"Cannot Delete","status":400}

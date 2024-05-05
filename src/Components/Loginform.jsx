@@ -21,7 +21,7 @@ const Loginform = () => {
     let username = un.current.value.trim();
     let password = pw.current.value.trim();
     userLogin(username);
-    if(username === userData["username"] && password == userData["password"]){
+    if(username == userData["username"] && password == userData["password"]){
       localStorage.setItem("username",userData["username"]);
       alert(`Login Successful ${userData['username']}`);
       navigate("/");

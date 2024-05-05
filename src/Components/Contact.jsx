@@ -6,7 +6,6 @@ import conImg from "./Assets/Images/conCake.png"
 import mail from "./Assets/Images/EmailIcon.png"
 import call from "./Assets/Images/CallIcon.png"
 import axios from 'axios'
-import img6 from "./Assets/Images/backgroundcake.png"
 import { useState } from "react"
 
 
