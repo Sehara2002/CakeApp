@@ -1,6 +1,7 @@
 import FooterComponent from "./FooterComponent"
 import Navbar from "./Navbar"
 import "./CSS/Cake.css"
+import { Link } from "react-router-dom"
 
 import wedImg from "./Assets/Images/wedding-cake.png"
 import wedImg02 from "./Assets/Images/wedding-cake02.png"
@@ -135,8 +136,15 @@ const Cakes = (props) => {
 
         </div>
        
-        
-
+        <Link to='/orders'>
+        <div className="customie-order">
+            
+            <button className="customie-order-btn">
+                If you need a customize one ? 
+            </button>
+            
+        </div>
+        </Link>
 
 
         <FooterComponent activePage = "cakes"/>
